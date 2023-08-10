@@ -66,3 +66,22 @@ function remind() {
 
 btn.addEventListener("click", remind)
 
+
+let w = prompt("")
+if ((w === null || w === "") && w !== undefined) {
+    alert("Please enter a valid input!")
+    w = false
+}
+else if (w == "usman" || w == "hamza") {
+    w = true
+}
+else {
+    w = false
+}
+if (w) {
+    console.log("Welcome to my website")
+}
+else {
+    console.log("Invalid Input")
+}
+
