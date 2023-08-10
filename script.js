@@ -67,21 +67,46 @@ function remind() {
 btn.addEventListener("click", remind)
 
 
-let w = prompt("")
-if ((w === null || w === "") && w !== undefined) {
-    alert("Please enter a valid input!")
-    w = false
-}
-else if (w == "usman" || w == "hamza") {
-    w = true
-}
-else {
-    w = false
-}
-if (w) {
-    console.log("Welcome to my website")
-}
-else {
-    console.log("Invalid Input")
-}
+// let w = prompt("")
+// if ((w === null || w === "") && w !== undefined) {
+//     alert("Please enter a valid input!")
+//     w = false
+// }
+// else if (w == "usman" || w == "hamza") {
+//     w = true
+// }
+// else {
+//     w = false
+// }
+// if (w) {
+//     console.log("Welcome to my website")
+// }
+// else {
+//     console.log("Invalid Input")
+// }
 
+
+const Bio_data = {
+    Name: "usman",
+    Age: 23,
+    Email: "usman@gmail.com",
+    PhoneNumber: '0987654321',
+    Address: 'Dubai',
+    Hobbies: 'reading'
+};
+
+let container = document.getElementById('container')
+let h1 = document.createElement('h1')
+let table = document.createElement('table')
+let tr = document.createElement('tr')
+let th = document.createElement('th')
+let td = document.createElement('td')
+th.innerHTML = "food"
+td.innerHTML = "biryani"
+h1.innerHTML = "My name is usman"
+
+container.appendChild(h1)
+container.appendChild(table)
+table.appendChild(tr)
+tr.appendChild(th)
+tr.appendChild(td)
