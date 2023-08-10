@@ -27,7 +27,7 @@
 //   console.log(num);
 // }
 
-let word = prompt("")
+// let word = prompt("")
 // if (word == "usman") {
 //   alert('Welcome to my website')
 // } else if (word == "Hamza") {
@@ -48,4 +48,21 @@ let word = prompt("")
 //   default:
 //     alert('You are not allowed here')
 // }
+
+
+let heading = document.getElementById('heading')
+let paragraph = document.getElementById('paragraph')
+let btn = document.getElementById('btn')
+
+
+function remind() {
+    let num1 = parseInt(prompt(""))
+    let num2 = parseInt(prompt(""))
+    let num3 = num1 % num2
+
+    heading.innerHTML = `Reminder of ${num1} and ${num2}`
+    paragraph.innerHTML = num3
+}
+
+btn.addEventListener("click", remind)
 
