@@ -110,3 +110,21 @@ container.appendChild(table)
 table.appendChild(tr)
 tr.appendChild(th)
 tr.appendChild(td)
+
+let z = parseInt(prompt(""))
+
+switch (z) {
+    case 10:
+    case 12:
+        alert("Hey you are welcome")
+        break;
+    case 1:
+    case 5:
+    case 7:
+    case 50:
+    case 20:
+        alert("welcome again");
+        break;
+    default:
+        alert("invalid input")
+}
