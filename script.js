@@ -128,3 +128,6 @@ switch (z) {
     default:
         alert("invalid input")
 }
+
+let h = prompt("")
+h == "usman" ? alert("You are usman") : alert("WHo are you")
